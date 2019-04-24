@@ -1,0 +1,1 @@
+Per chi non vuole tirare giù l'intero paradiso a furia di bestemmie vi consiglio di creare il file .vimrc nella vostra home directory con quel contenuto

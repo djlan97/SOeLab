@@ -1,0 +1,13 @@
+CC=gcc
+CFLAGS=-Wall -I../utils/
+HEADERS=../utils/utils.h
+LIBS=../utils/utils.c
+BINS=parametri1 parametri2 contaOccorrenze mycat1 22sett99-1 append1 selezionaMultipli selezionaMultipli1 myhead1 myhead2 myhead3 selezionaLinea selezionaLunghezzaLinea
+
+all: $(BINS)
+	
+clean:
+	rm -rf *.o $(BINS)
+
+%: %.c $(HEADERS) $(LIBS)
+	$(CC) $(CFLAGS) $(LIBS) $< -o $@
